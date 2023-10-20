@@ -1,16 +1,18 @@
-# easy-apply-bot
+# Linkedin EasyApply Bot
 Automate the application process on LinkedIn
 
-Setup
+## Setup 
 
 Python 3.10 using a conda virtual environment on Linux (Ubuntu)
 
 The run the bot install requirements
-
+```bash
 pip3 install -r requirements.txt
+```
 
-Enter your username, password, and search settings into the config.yaml file
+Enter your username, password, and search settings into the `config.yaml` file
 
+```yaml
 username: # Insert your username here
 password: # Insert your password here
 
@@ -34,13 +36,19 @@ output_filename:
 
 blacklist:
 - # Company names you want to ignore
+```
+__NOTE: AFTER EDITING SAVE FILE, DO NOT COMMIT FILE__
 
-NOTE: AFTER EDITING SAVE FILE, DO NOT COMMIT FILE
-Uploads
+### Uploads
 
-There is no limit to the number of files you can list in the uploads section. The program takes the titles from the input boxes and tries to match them with list in the config file.
-Execute
+There is no limit to the number of files you can list in the uploads section. 
+The program takes the titles from the input boxes and tries to match them with 
+list in the config file.
+
+## Execute
 
 To execute the bot run the following in your terminal
-
+```
 python3 easyapplybot.py
+```
+
